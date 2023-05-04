@@ -1,0 +1,91 @@
+body {
+    background-color:#8a2be24d;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Anton', sans-serif;
+    font-size: 32px;
+    color: blueviolet;
+}
+
+h4,
+h5,
+h6 {
+    font-family: 'Inconsolata', monospace;
+    font-weight: 700;
+    font-size: 24px;
+    color: darkslategrey;
+}
+
+p,
+span {
+    font-family: 'Inconsolata', monospace;
+    font-weight: 400;
+    font-size: 16px;
+    color: black;
+}
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 16px;
+    color: blueviolet;
+}
+
+a:hover {
+    background-color: blueviolet;
+    color: white;
+}
+
+.button a {
+    border: 2px solid blueviolet;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: white;
+    border-radius: 20px;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    color: blueviolet;
+}
+
+.button a:hover {
+    background-color: blueviolet;
+    color: white;
+}
+
+.button {
+    margin: 40px 0;
+}
+
+.card {
+    display: flex;
+    background-color:white;
+    border-radius:40px;
+    margin:20px;
+    padding:20px;
+}
+
+.box img {
+    border-radius: 20px;
+    box-shadow: 5px 10px #8a2be24d;
+    width: 100%;
+}
+
+.box {
+    flex: 1;
+    padding:20px;
+    margin:20px;
+    align-self: center;
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        display:block;
+    }
+
+    .box {
+        text-align: center;
+    }
+}

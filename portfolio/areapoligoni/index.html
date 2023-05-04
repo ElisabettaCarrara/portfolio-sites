@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ! FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/a50d413671.js" crossorigin="anonymous"></script>
+    <!-- ! GOOGLE FONTS ANTON & ROBOTO MONO-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Mono:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- ! BOOTSTRAP 5.2 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- ! MIO CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" type="text/css">
+    <title>Area Calc</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./assets/img/logopoly.png" alt="logo" width="50" height="50"
+                        class="d-inline-block align-text-center">
+                    AREA CALC
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#triangolo">Triangolo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#quadrato">Quadrato</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#cerchio">Cerchio</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="overlay">
+                <h2>AREA CALCULATOR</h2>
+                <p class="lead">
+                    Calcola le aree dei poligoni online!
+                </p>
+            </div>
+        </section>
+        <section id="triangolo">
+            <h2 class="text-center">CALCOLA L'AREA DI UN TRIANGOLO</h2>
+            <div class="row justify-content-center">
+                <div class="col">
+                    <label for="lato1" class="form-label">LATO 1:</label>
+                    <input type="number" id="lato1" placeholder="Lato 1" class="form-control">
+                </div>
+                <div class="col">
+                    <label for="lato2" class="form-label">LATO 2:</label>
+                    <input type="number" id="lato2" placeholder="Lato 2" class="form-control">
+                </div>
+                <div class="col">
+                    <label for="lato3" class="form-label">LATO 3:</label>
+                    <input type="number" id="lato3" placeholder="Lato 3" class="form-control">
+                </div>
+                <div class="col">
+                    <button class="btn btn-primary" onclick="Area()">
+                Calcola
+                </button>
+                <input class="btn btn-warning" type="reset">
+                </div>
+                
+            </div>
+            <p>
+                Risultato: <span id="display-uno"></span>
+            </p>
+        </section>
+        <section id="quadrato">
+            <h2 class="text-center">CALCOLA L'AREA DI UN RETTANGOLO O DI UN QUADRATO</h2>
+            <div class="row justify-content-center">
+                <div class="col">
+                    <label for="latoA" class="form-label">LATO A:</label>
+                    <input type="number" id="latoA" placeholder="Lato A" class="form-control">
+                </div>
+                <div class="col">
+                    <label for="latoB" class="form-label">LATO B:</label>
+                    <input type="number" id="latoB" placeholder="Lato B" class="form-control">
+                </div>
+                <div class="col">
+                    <button class="btn btn-primary" onclick="Area2()">
+                Calcola
+                </button>
+                <input class="btn btn-warning" type="reset">
+                </div>
+                
+            </div>
+            <p>
+                Risultato: <span id="display-due"></span>
+            </p>
+        </section>
+        <section id="cerchio">
+            <h2 class="text-center">CALCOLA L'AREA DI UN CERCHIO</h2>
+            <div class="row justify-content-center">
+                <div class="col">
+                    <label for="raggio" class="form-label">RAGGIO:</label>
+                    <input type="number" id="raggio" placeholder="Raggio" class="form-control">
+                </div>
+                <div class="col">
+                    <button class="btn btn-primary" onclick="Area3()">
+                Calcola
+                </button>
+                <input class="btn btn-warning" type="reset">
+                </div>
+                
+            </div>
+            <p>
+                Risultato: <span id="display-tre"></span>
+            </p>
+        </section>
+    </main>
+    <footer>
+<p>&copy; Elisabetta Carrara 2022</p>
+<div>
+    Questo calcolatore è un esercizio che comprende concetti di JavaScript, HTML, CSS e Bootstrap.
+</div>
+    </footer>
+
+    <!-- ! BOOTSTRAP + JQUERY 3.5.1 -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+        crossorigin="anonymous"></script>
+    <script src="./assets/js/main.js" type="text/javascript"></script>
+</body>
+
+</html>

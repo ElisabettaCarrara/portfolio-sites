@@ -1,0 +1,160 @@
+/*
+font-family: 'Oswald', sans-serif;
+font-family: 'Roboto Mono', monospace;
+
+Oswald used for Titles - 500/600/700 font-weight
+Roboto Mono used for Paragraphs - 400/700 font-weight
+*/
+
+:root {
+    --main-color: #ae0606;
+    --secondary-color: #35393c;
+    --light: white;
+    --dark: black;
+    --shadeone: #ffd399;
+    --shadetwo: #ced0ce;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2 {
+    font-family: "Oswald", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--main-color);
+    padding: 20px;
+}
+
+h3,
+h4 {
+    font-family: "Oswald", sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--secondary-color);
+    padding: 20px;
+}
+
+h5,
+h6 {
+    font-family: "Oswald", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--dark);
+}
+
+p,
+li {
+    font-family: "Roboto Mono", monospace;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--dark);
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+header {
+    border-bottom: 5px solid var(--main-color);
+    margin-bottom: 20px;
+}
+
+ul {
+    align-items: center;
+}
+
+.btn-primary,
+.button, .badge-primary, .badge-pill, .badge {
+    background-color: var(--shadeone);
+    border: 3px solid var(--main-color);
+    color: var(--main-color);
+    margin: 20px;
+    padding: 10px;
+}
+
+.btn-primary:hover,
+.button:hover {
+    background-color: var(--main-color);
+    border: 3px solid var(--main-color);
+}
+
+form {
+    padding: 20px;
+}
+
+.colonna-uno ul li {
+    list-style-type: none;
+}
+
+.colonna-uno ul li a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.colonna-uno ul li a:hover {
+    color: var(--secondary-color);
+}
+
+.colonna-due a {
+    text-decoration: none;
+    color: var(--main-color);
+    font-size: 24px;
+    padding:10px;
+}
+
+.colonna-due a:hover {
+    color: var(--secondary-color);
+}
+
+.backdrop {
+    background-color: var(--shadeone);
+}
+
+.card-img-top {
+    max-height: 380px;
+    max-width: 380px;
+}
+
+footer {
+    background-color: #f8f9fa;
+    border-top: 5px solid var(--main-color);
+}
+
+.copyleft {
+    color: var(--dark);
+    font-size: 16px;
+    padding:5px;
+}
+
+.container,
+.container-fluid, .card-deck {
+    padding: 20px;
+}
+
+.landmark {
+    background-color: var(--shadetwo);
+    padding-top: 20px;
+    margin: 20px;
+}
+
+.address {
+    font-size: 14px;
+    color: var(--main-color);
+}
+
+.listainfo li {
+    list-style-type: none;
+}
+
+.fa-circle-info {
+    padding: 10px;
+    color: var(--main-color);
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 768px) {}

@@ -1,0 +1,246 @@
+/*
+main color #306eab
+secondary color #30ab6e
+font-family: 'Roboto Mono', monospace;
+400-500-600-700
+*/
+
+:root {
+    --main-color: #306eab;
+    --secondary-color: #30ab6e;
+    --light: white;
+    --dark: black;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+
+h1,
+h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--main-color);
+}
+
+h3,
+h4 {
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+h5,
+h6 {
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--dark);
+}
+
+p {
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--dark);
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.button a {
+    border: 2px solid var(--main-color);
+    text-decoration: none;
+    font-size: 20px;
+    background-color: white;
+    border-radius: 20px;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    color: var(--main-color);
+}
+
+.button a:hover {
+    background-color: var(--main-color);
+    color: white;
+}
+
+.button {
+    margin: 40px 0;
+}
+
+header img {
+    height: 80px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img,
+header nav {
+    display: inline;
+    margin: 10px;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav a i {
+    display: inline;
+    color: var(--main-color);
+    padding: 10px 20px;
+    font-size: 24px;
+}
+
+header nav a i:hover {
+    color: var(--light);
+    background-color: var(--secondary-color);
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid var(--secondary-color);
+}
+
+.hero .text ul li {
+    font-size: 24px;
+}
+
+.green {
+    background-color: #30ab6e4d;
+}
+
+.box img {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border-radius: 50px;
+}
+
+.box {
+    display: inline;
+    flex: 1;
+    padding: 20px;
+}
+
+#details {
+    background-color: #306eab40;
+    padding: 20px;
+}
+
+#lesson-plan {
+    padding: 20px;
+}
+
+#lesson-plan p span {
+    font-weight: 700;
+    color: var(--main-color);
+}
+
+#pricing {
+    background-color: #306eab40;
+    padding: 20px;
+}
+
+#pricing p span {
+    font-weight: 700;
+    color: var(--main-color);
+}
+
+footer .copy i,
+footer .copy span {
+    font-size: 16px;
+    padding: 10px;
+    color: var(--main-color);
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-top: 2px solid var(--secondary-color);
+}
+
+.box-foot {
+    display: inline;
+}
+
+.social {
+    display: flex;
+}
+
+.social a i {
+    display: inline;
+    color: var(--main-color);
+    padding: 10px 20px;
+    font-size: 24px;
+}
+
+.social a i:hover {
+    color: var(--light);
+    background-color: var(--secondary-color);
+}
+
+.cookie-banner {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    left: 10%;
+    right: 10%;
+    width: 80%;
+    padding: 5px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #eee;
+    border-radius: 5px;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    height: 20px;
+    background-color: #777;
+    border: none;
+    color: white;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:768px) {
+
+    body p,
+    .hero .text ul li {
+        font-size: 16px;
+    }
+
+    .hero {
+        display: block;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .box {
+        display: block;
+    }
+
+    footer {
+        display: block;
+        text-align: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .social {
+        display: block;
+        text-align: center;
+        padding: 10px;
+    }
+}

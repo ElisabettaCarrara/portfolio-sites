@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+    <script src="https://kit.fontawesome.com/a50d413671.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Roboto+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="./assets/js/custom.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css" text="text/css">
+    <title>Magazine</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/img/eco.png" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="abbonamenti.html">Abbonamenti</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                            aria-expanded="false">
+                            Abbonati!
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="abbonamento-mese.html">Mensile</a>
+                            <a class="dropdown-item" href="abbonamento-mese.html">Settimanale</a>
+                            <a class="dropdown-item" href="abbonamento-mese.html">Quindicinale</a>
+                            <a class="dropdown-item" href="abbonamento-mese.html">Annuale</a>
+                            <a class="dropdown-item" href="abbonamento-mese.html">Quadrimestrale</a>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                            <i class="fa-solid fa-envelope"></i>
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal backdrop fade show" id="exampleModal" tabindex="-1"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Newsletter</h5>
+                                        <form>
+                                            <p>Iscriviti alla Newsletter!</p>
+                                            <div class="form-group">
+                                                <label for="nome">Nome</label>
+                                                <input class="form-control" type="text" placeholder="Nome" name="nome"
+                                                    id="nome">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="exampleInputEmail1">Email address</label>
+                                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                                    placeholder="E-mail" aria-describedby="emailHelp">
+                                                <small id="emailHelp" class="form-text text-muted">Non condivideremo
+                                                    la tua email con
+                                                    nessun
+                                                    altro.</small>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Iscriviti!</button>
+                                        </form>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm">
+                    <img class="container-fluid" src="./assets/img/1.png" alt="Abbonamento Mensile">
+                </div>
+                <div class="col-sm">
+                    <h5>L'abbonamento Mensile comprende:</h5>
+                    <ul class="listainfo">
+                        <li>
+                            <p>Notizie Locali<i type="button" data-toggle="popover" title="Informazioni"
+                                    data-content='Notizie di cronaca locale aggiornate in tempo reale, con la possibilità di segnalare le notizie ai nostri cronisti.'
+                                    class="fa-solid fa-circle-info"></i></p>
+                        </li>
+                        <li>
+                            <p>Notizie Sportive<i type="button" data-toggle="popover" title="Informazioni"
+                                    data-content='Notizie sportive locali aggiornate in tempo reale.'
+                                    class="fa-solid fa-circle-info"></i></p>
+                        </li>
+                        <li>
+                            <p>Piccoli annunci<i type="button" data-toggle="popover" title="Informazioni"
+                                    data-content='Pubblicazione di piccoli annunci nelle rubriche Lavoro e Cerco/Offro.'
+                                    class="fa-solid fa-circle-info"></i></p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm">
+                    <h5>Prezzo: 100 &#8364;</h5>
+                    <h5>Quantità:</h5>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Example select</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm colonna-uno">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="abbonamenti.html">Abbonamenti</a></li>
+                        <li><a href="#">Privacy & Cookies Policy</a></li>
+                        <li><a href="#">Termini e Condizioni</a></li>
+                        <li><a href="#">Lavora con noi</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm colonna-due">
+                    <a href="https://www.facebook.com/elicawebdesign" target="_blank"><i
+                            class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/elicawebdesign" target="_blank"><i
+                            class="fa-brands fa-twitter"></i></a>
+                    <a href="https://github.com/ElisabettaCarrara" target="_blank"><i
+                            class="fa-brands fa-github"></i></a>
+                    <a href="https://codepen.io/ElisabettaC77" target="_blank"><i class="fa-brands fa-codepen"></i></a>
+                    <a href="mailto:elisabetta.marina.clelia@gmail.com" target="_blank"><i
+                            class="fa-solid fa-envelope"></i></a>
+                </div>
+                <div class="col-sm">
+                    <form>
+                        <p>Iscriviti alla Newsletter!</p>
+                        <div class="form-group">
+                            <label for="nome">Nome</label>
+                            <input class="form-control" type="text" placeholder="Nome" name="nome" id="nome">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="E-mail"
+                                aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">Non condivideremo
+                                la tua email con
+                                nessun
+                                altro.</small>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Iscriviti!</button>
+                    </form>
+                </div>
+                <div class="col-sm">
+                    <i class="fa-regular fa-copyright copyleft"></i><span class="copyleft">Elisabetta Carrara
+                        2022</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+    <script>
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#aa0000",
+          "text": "#ffdddd"
+        },
+        "button": {
+          "background": "#ff0000"
+        }
+      },
+      "theme": "classic",
+      "position": "bottom-right",
+      "type": "opt-out"
+    });
+    </script>
+
+    <!--BOOTSTRAP SCRIPTS-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

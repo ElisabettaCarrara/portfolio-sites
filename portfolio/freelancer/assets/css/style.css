@@ -1,0 +1,365 @@
+/*
+font-family: 'Oswald', sans-serif; (500/600/700)
+font-family: 'Roboto Mono', monospace; (400/700)
+*/
+
+:root {
+    --main-color: #306eab;
+    --secondary-color: #30ab6e;
+    --light: white;
+    --dark: black;
+    --shadow-sec: #30ab6e47;
+    --shadow-main: #306eab66;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+
+h1,
+h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--main-color);
+}
+
+h3,
+h4 {
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+h5,
+h6 {
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--dark);
+}
+
+p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--dark);
+}
+
+a {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.button a {
+    border: 5px solid var(--secondary-color);
+    text-decoration: none;
+    font-size: 20px;
+    background-color: var(--light);
+    border-radius: 20px;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    color: var(--main-color);
+}
+
+.button a:hover {
+    background-color: var(--secondary-color);
+    color: var(--light);
+}
+
+.button {
+    margin: 40px 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin:10px;
+}
+
+.box {
+    display: inline;
+}
+
+.logo {
+    width: 80px;
+    padding:15px;
+}
+
+.box a i {
+    font-size: 24px;
+    color: var(--main-color);
+    padding:15px;
+}
+
+.box a i:hover {
+    color: var(--secondary-color);
+}
+
+/* [ON BIG SCREEN] */
+/* (A) WRAPPER */
+#hamnav {
+    width: 100%;
+    background: var(--main-color);
+}
+
+/* (B) HORIZONTAL MENU ITEMS */
+#hamitems {
+    display: flex;
+}
+
+#hamitems a {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 10px;
+    color: var(--light);
+    text-decoration: none;
+    text-align: center;
+}
+
+#hamitems a:hover {
+    background: var(--secondary-color);
+}
+
+#hamitems a i {
+    padding: 5px 10px;
+}
+
+/* (C) HIDE HAMBURGER */
+#hamnav label,
+#hamburger {
+    display: none;
+}
+
+/*
+Hero Image
+*/
+
+.hero {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    filter: brightness(20%);
+}
+
+.hero-content {
+    position: relative;
+}
+
+.hero {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.hero-content {
+    position: relative;
+    color: var(--light);
+    text-align: center;
+    margin: 0.625rem;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 0;
+    color: var(--main-color);
+}
+
+.hero-subtitle {
+    font-size: 2rem;
+    font-weight: 200;
+    margin-top: 1rem;
+    color: var(--light)
+}
+
+/*
+Cards
+*/
+
+.pop-serv {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    display: inline;
+    width:20%;
+    border: 3px solid var(--main-color);
+    border-radius: 15px;
+    margin:15px;
+    padding:5px;
+    text-align: center;
+}
+
+.card img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.titolo {
+    text-align: center;
+}
+
+/*
+Sezione Vantaggi
+*/
+
+.advantage {
+    display: flex;
+    background-color: var(--shadow-main);
+    padding:10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.single-box {
+    display: inline;
+    padding:20px;
+}
+
+.single-box .button {
+    text-align: center;
+}
+
+.single-box img {
+    border-radius: 10px;
+    border: 3px solid var(--main-color);
+    text-align: center;
+}
+
+.single-box h3 {
+    text-align: center;
+}
+
+/*
+Icons
+*/
+
+.categories {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.icon-squares {
+    display: inline;
+    border: 3px solid var(--main-color);
+    border-radius: 25px;
+    margin:15px;
+}
+
+.icon-squares a i {
+    font-size:60px;
+    padding:10px;
+    margin:5px;
+    color: var(--main-color);
+    border-radius: 20px;
+}
+
+.icon-squares a i:hover {
+    color: var(--light);
+    background-color: var(--secondary-color);
+}
+
+/* [ON SMALL SCREENS] */
+@media screen and (max-width: 768px) {
+
+    /* (A) BREAK INTO VERTICAL MENU */
+    #hamitems a {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        border-top: 1px solid #333;
+    }
+
+    /* (B) SHOW HAMBURGER ICON */
+    #hamnav label {
+        display: inline-block;
+        color: var(--light);
+        background: var(--secondary-color);
+        font-size: 1.2em;
+        padding: 10px;
+    }
+
+    /* (C) TOGGLE SHOW/HIDE MENU */
+    #hamitems {
+        display: none;
+    }
+
+    #hamnav input:checked~#hamitems {
+        display: block;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .box {
+        display: flex;
+    }
+
+    .box a i {
+        display: inline;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    .pop-serv {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 90%;
+        padding:0;
+    }
+
+    .advantage {
+        display: block;
+    }
+
+    .single-box h4 {
+        text-align: center;
+    }
+
+    .single-box img {
+        width: 90%;
+        text-align: center;
+    }
+
+    .single-box .button {
+        text-align: center;
+    }
+
+    .categories {
+        flex-flow: row wrap;
+    }
+}
